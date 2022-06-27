@@ -3,6 +3,7 @@
 {{ $logo := $params.logo }}
 <header class="nav_header" >
   {{- partialCached "adplus/header-ads.html" . }}
+  {{- partialCached "site_schema.html" . }}
   <nav class="nav">
     {{- if $centerLogo }}
       {{- partialCached "logo" (dict "logo" $logo "class" "nav_hide") }}
